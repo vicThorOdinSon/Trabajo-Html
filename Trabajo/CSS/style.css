@@ -1,0 +1,135 @@
+.container{
+    background-color: rgba(5, 5, 5, 0.082);
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagen-formulario {
+    width: 100vw;
+    height: 250px;
+    margin: 0 ;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 253);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+
+label.form-label{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: darkblue;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+input[type="color"] {
+    width: 100%;
+    height: 15px;
+    padding: 3px;
+}
+
+.range-container {
+    position: relative;
+    padding-top: 30px;
+}
+.range-value {
+    position: absolute;
+    right: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    transition: width 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+}
+.range-slider {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.progress-point {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.form-range {
+    height: 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.form-range::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 8px;
+}
+
+.form-range::-moz-range-track {
+    height: 15px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .imagen-formulario {
+        max-width: 100%;
+    }
+}
